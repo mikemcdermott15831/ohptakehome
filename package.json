@@ -1,0 +1,14 @@
+{
+  "name": "ohp",
+  "version": "1.0.0",
+  "description": "ohp coding take-home exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael McDermott",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
