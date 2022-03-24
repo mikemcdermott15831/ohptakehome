@@ -24,13 +24,13 @@ export default {
   },
   methods: {
       doGenerateMBI: function() {
-        this.axios.get("http://localhost/generate").then((response) => {
+        this.axios.get("/generate").then((response) => {
            this.mbi=response.data;
            this.verified=null;
         })
       },
       doVerifyMBI: function() {
-        this.axios.post("http://localhost/verify", {
+        this.axios.post("/verify", {
           input_mbi: this.mbi
         }).then((response) => {
           this.verified=(response.data===true)?"Verified":"Did Not Verify"
